@@ -1,4 +1,4 @@
-<mujoco model="spot with arm scene">
+<mujoco model="Boston Dynamics Spot with Arm">
   <include file="spot_arm.xml"/>
 
   <statistic center="0.15 0.1 0.38" extent=".8" meansize="0.05"/>
