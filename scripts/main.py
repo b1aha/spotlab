@@ -1,0 +1,15 @@
+import os
+import mujoco
+import mujoco.viewer
+
+def main():
+    scene = os.path.join(os.path.dirname(__file__), "..", "assets", "spot", "scene_arm.xml")
+    model = mujoco.MjModel.from_xml_path(scene)
+    data = mujoco.MjData(model)
+    with mujoco.viewer.launch_passive(model, data) as viewer:
+        while viewer.is_running():
+            mujoco.mj_step(model, data)
+            viewer.sync()
+
+if __name__ == "__main__":
+    main()
