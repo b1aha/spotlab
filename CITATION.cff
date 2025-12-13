@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: Spotlab
+type: software
+authors:
+  - family-names: Bláha
+    given-names: Jiří
+year: 2025
+license: MIT
